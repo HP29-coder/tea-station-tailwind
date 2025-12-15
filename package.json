@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "node ./node_modules/@tailwindcss/cli/dist/index.ms -i ./css/main.css -o ./dist/output.css",
+    "build": "node ./node_modules/@tailwindcss/cli/dist/index.mjs -i ./css/main.css -o ./dist/output.css",
     "dev": "node ./node_modules/@tailwindcss/cli/dist/index.mjs -i ./css/main.css -o ./dist/output.css --watch"
   },
   "dependencies": {
