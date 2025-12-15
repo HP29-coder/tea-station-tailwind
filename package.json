@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./css/main.css -o ./dist/output.css",
+    "postinstall": "chmod +x node_modules/.bin/tailwindcss",
+    "build": "mkdir -p dist && npx @tailwindcss/cli -i ./css/main.css -o ./dist/output.css",
     "dev": "npx @tailwindcss/cli -i ./css/main.css -o ./dist/output.css --watch"
   },
   "devDependencies": {
