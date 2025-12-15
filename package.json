@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./css/main.css -o ./dist/output.css",
-    "dev": "npx @tailwindcss/cli -i ./css/main.css -o ./dist/output.css --watch"
+    "build": "node ./node_modules/@tailwindcss/cli/build/index.js -i ./css/main.css -o ./dist/output.css",
+    "dev": "node ./node_modules/@tailwindcss/cli/build/index.js -i ./css/main.css -o ./dist/output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
